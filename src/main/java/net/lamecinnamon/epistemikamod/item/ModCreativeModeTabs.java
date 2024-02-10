@@ -18,10 +18,10 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EpistemikaMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> EPISTEMIKA_TAB = CREATIVE_MODE_TABS.register("epistemika_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.IOLITE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SENONITE.get()))
                     .title(Component.translatable("creativetab:epistemika_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.IOLITE.get());
+                        pOutput.accept(ModItems.SENONITE.get());
                     })
                     .build());
 
