@@ -1,6 +1,7 @@
 package net.lamecinnamon.epistemikamod.item;
 
 import net.lamecinnamon.epistemikamod.EpistemikaMod;
+import net.lamecinnamon.epistemikamod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab:epistemika_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SENONITE.get());
+
+                        pOutput.accept(ModBlocks.SENONITE_BLOCK.get());
+
                     })
                     .build());
 

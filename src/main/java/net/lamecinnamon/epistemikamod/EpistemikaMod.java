@@ -1,6 +1,7 @@
 package net.lamecinnamon.epistemikamod;
 
 import com.mojang.logging.LogUtils;
+import net.lamecinnamon.epistemikamod.block.ModBlocks;
 import net.lamecinnamon.epistemikamod.item.ModCreativeModeTabs;
 import net.lamecinnamon.epistemikamod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,7 @@ public class EpistemikaMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
